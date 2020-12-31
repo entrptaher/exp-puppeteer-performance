@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cat package.json
+ls node_modules
 node index.js

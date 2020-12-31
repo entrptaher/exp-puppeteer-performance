@@ -4,10 +4,10 @@ services:
   puppeteer:
     build: .
     command: bash script.sh
+    ports: 
+      - "3000:3000"
     volumes:
       - yarn_cache:/yarn
-      - node_modules_cache:/app/node_modules
 
 volumes:
   yarn_cache:
-  node_modules_cache:
