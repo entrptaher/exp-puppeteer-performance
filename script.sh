@@ -1,4 +1,3 @@
 #!/bin/bash
 
-ls node_modules
-node index.js
+xvfb-run -a node index.js
