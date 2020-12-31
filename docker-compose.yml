@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  puppeteer:
+    build: .
+    command: bash script.sh
+    volumes:
+      - yarn_cache:/yarn
+      - node_modules_cache:/app/node_modules
+
+volumes:
+  yarn_cache:
+  node_modules_cache:
