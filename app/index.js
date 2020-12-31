@@ -9,7 +9,7 @@ const launchAndClose = async (headless) => {
   const time = performance.now();
   const browser = await puppeteer.launch({
     headless,
-    args: ["--no-sandbox", "--disable-gpu"],
+    args: ["--no-sandbox", '--disable-setuid-sandbox', "--disable-gpu"],
   });
 
   // cleanup
