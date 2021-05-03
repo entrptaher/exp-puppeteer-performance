@@ -1,7 +1,7 @@
 FROM zenika/alpine-chrome:with-node
 
 USER root
-RUN apk add --no-cache bash xvfb xvfb-run
+RUN apk upgrade && apk add --no-cache bash xvfb xvfb-run
 
 USER chrome
 WORKDIR /usr/src/app
